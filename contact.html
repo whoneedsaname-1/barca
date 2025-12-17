@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הצטרפות למועדון - FC Barcelona</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">FC Barcelona IL</div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">בית</a></li>
+                    <li><a href="players.html">סגל</a></li>
+                    <li><a href="history.html">היסטוריה</a></li>
+                    <li><a href="stats.html">סטטיסטיקה</a></li>
+                    <li><a href="contact.html">הצטרפות</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section style="text-align: center;">
+            <img src="assets/fans_icon.png" alt="Fans" style="max-width: 200px; margin-bottom: 2rem;">
+            <h2>הצטרפו למועדון האוהדים הרשמי!</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                רוצים לקבל עדכונים, הנחות לכרטיסים ולהיות חלק מקהילת הקולס בישראל? <br>
+                מלאו את הפרטים והצטרפו למשפחת ברצלונה.
+            </p>
+
+            <div class="form-container">
+                <form onsubmit="event.preventDefault(); alert('תודה שנרשמת! ניצור איתך קשר בהקדם.');">
+                    <div class="form-group">
+                        <label for="name">שם מלא</label>
+                        <input type="text" id="name" required placeholder="ישראל ישראלי">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">כתובת אימייל</label>
+                        <input type="email" id="email" required placeholder="yourname@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">מספר טלפון</label>
+                        <input type="tel" id="phone" placeholder="050-0000000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="player">מי השחקן האהוב עליך?</label>
+                        <select id="player">
+                            <option value="">בחר שחקן...</option>
+                            <option value="messi">ליאו מסי (תמיד בלב)</option>
+                            <option value="yamal">לאמין ימאל</option>
+                            <option value="pedri">פדרי</option>
+                            <option value="gavi">גאבי</option>
+                            <option value="lewy">רוברט לבנדובסקי</option>
+                            <option value="terstegen">מארק-אנדרה טר שטגן</option>
+                            <option value="puyol">קרלס פויול</option>
+                            <option value="xavi">צ'אבי</option>
+                            <option value="iniesta">אינייסטה</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">הערות נוספות (אופציונלי)</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">שלח
+                        הרשמה</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">בית</a>
+                <a href="players.html">סגל</a>
+                <a href="history.html">היסטוריה</a>
+                <a href="stats.html">סטטיסטיקה</a>
+                <a href="contact.html">הצטרפות</a>
+            </div>
+            <p>&copy; 2025 FC Barcelona Fan Site. Created by Antigravity.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

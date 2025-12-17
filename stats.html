@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סטטיסטיקה - FC Barcelona</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png">
+    <style>
+        .trophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .trophy-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 2px solid var(--barca-gold);
+        }
+
+        .trophy-count {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--barca-blue);
+        }
+
+        .trophy-name {
+            font-size: 1.2rem;
+            color: var(--barca-red);
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-label {
+            font-weight: bold;
+        }
+
+        .stats-header-img {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .stats-header-img img {
+            max-width: 150px;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">FC Barcelona IL</div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">בית</a></li>
+                    <li><a href="players.html">סגל</a></li>
+                    <li><a href="history.html">היסטוריה</a></li>
+                    <li><a href="stats.html">סטטיסטיקה</a></li>
+                    <li><a href="contact.html">הצטרפות</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <div class="stats-header-img">
+                <img src="assets/stats_icon.png" alt="Stats Icon">
+            </div>
+            <h2>ארון התארים</h2>
+            <div class="trophy-grid">
+                <div class="trophy-card">
+                    <div class="trophy-count">28</div>
+                    <div class="trophy-name">אליפויות ספרד</div>
+                </div>
+                <div class="trophy-card">
+                    <div class="trophy-count">5</div>
+                    <div class="trophy-name">ליגת האלופות</div>
+                </div>
+                <div class="trophy-card">
+                    <div class="trophy-count">32</div>
+                    <div class="trophy-name">גביע המלך</div>
+                </div>
+                <div class="trophy-card">
+                    <div class="trophy-count">3</div>
+                    <div class="trophy-name">אליפות העולם לקבוצות</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>שיאים בכל הזמנים</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>מלך השערים</h3>
+                    <div class="stat-row">
+                        <span class="stat-label">ליאו מסי</span>
+                        <span>672 שערים</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">סזאר רודריגז</span>
+                        <span>232 שערים</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">לואיס סוארס</span>
+                        <span>198 שערים</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>שיאני ההופעות</h3>
+                    <div class="stat-row">
+                        <span class="stat-label">ליאו מסי</span>
+                        <span>778 משחקים</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">צ'אבי הרננדז</span>
+                        <span>767 משחקים</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">סרחיו בוסקטס</span>
+                        <span>722 משחקים</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>סטטיסטיקה עונתית (2025/26)</h2>
+            <div class="grid">
+
+                <!-- Top Scorers -->
+                <div class="card" style="padding: 0;">
+                    <div
+                        style="background: var(--barca-blue); color: white; padding: 1rem; border-radius: 12px 12px 0 0;">
+                        <h3 style="margin: 0; text-align: center;">מלך השערים</h3>
+                    </div>
+                    <div class="table-container" style="box-shadow: none; border-radius: 0 0 12px 12px;">
+                        <table style="min-width: unset;">
+                            <thead>
+                                <tr style="background: #f8f9fa; color: #333;">
+                                    <th style="background: transparent; color: #333;">דירוג</th>
+                                    <th style="background: transparent; color: #333; text-align: right;">שחקן</th>
+                                    <th style="background: transparent; color: #333; text-align: center;">משחקים</th>
+                                    <th style="background: transparent; color: var(--barca-red); text-align: center;">
+                                        שערים</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="pos-1">
+                                    <td style="text-align: center; font-weight: bold;">1</td>
+                                    <td>פראן טורס</td>
+                                    <td style="text-align: center;">16</td>
+                                    <td style="text-align: center; font-weight: bold;">11</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">2</td>
+                                    <td>רוברט לבנדובסקי</td>
+                                    <td style="text-align: center;">12</td>
+                                    <td style="text-align: center; font-weight: bold;">8</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">3</td>
+                                    <td>לאמין ימאל</td>
+                                    <td style="text-align: center;">13</td>
+                                    <td style="text-align: center; font-weight: bold;">6</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">4</td>
+                                    <td>ראפיניה</td>
+                                    <td style="text-align: center;">10</td>
+                                    <td style="text-align: center; font-weight: bold;">6</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">5</td>
+                                    <td>דני אולמו</td>
+                                    <td style="text-align: center;">13</td>
+                                    <td style="text-align: center; font-weight: bold;">4</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">6</td>
+                                    <td>פרמין לופז</td>
+                                    <td style="text-align: center;">11</td>
+                                    <td style="text-align: center; font-weight: bold;">4</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">7</td>
+                                    <td>מרכוס רשפורד</td>
+                                    <td style="text-align: center;">16</td>
+                                    <td style="text-align: center; font-weight: bold;">2</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">8</td>
+                                    <td>רונאלד אראוחו</td>
+                                    <td style="text-align: center;">11</td>
+                                    <td style="text-align: center; font-weight: bold;">2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Top Assists -->
+                <div class="card" style="padding: 0;">
+                    <div
+                        style="background: var(--barca-gold); color: var(--barca-blue); padding: 1rem; border-radius: 12px 12px 0 0;">
+                        <h3 style="margin: 0; text-align: center;">מלך הבישולים</h3>
+                    </div>
+                    <div class="table-container" style="box-shadow: none; border-radius: 0 0 12px 12px;">
+                        <table style="min-width: unset;">
+                            <thead>
+                                <tr style="background: #f8f9fa; color: #333;">
+                                    <th style="background: transparent; color: #333;">דירוג</th>
+                                    <th style="background: transparent; color: #333; text-align: right;">שחקן</th>
+                                    <th style="background: transparent; color: #333; text-align: center;">משחקים</th>
+                                    <th style="background: transparent; color: var(--barca-blue); text-align: center;">
+                                        בישולים</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="pos-1">
+                                    <td style="text-align: center; font-weight: bold;">1</td>
+                                    <td>לאמין ימאל</td>
+                                    <td style="text-align: center;">13</td>
+                                    <td style="text-align: center; font-weight: bold;">7</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">2</td>
+                                    <td>מרכוס רשפורד</td>
+                                    <td style="text-align: center;">16</td>
+                                    <td style="text-align: center; font-weight: bold;">6</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">3</td>
+                                    <td>פדרי</td>
+                                    <td style="text-align: center;">14</td>
+                                    <td style="text-align: center; font-weight: bold;">5</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">4</td>
+                                    <td>ראפיניה</td>
+                                    <td style="text-align: center;">10</td>
+                                    <td style="text-align: center; font-weight: bold;">3</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">5</td>
+                                    <td>אלכס באלדה</td>
+                                    <td style="text-align: center;">13</td>
+                                    <td style="text-align: center; font-weight: bold;">2</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">6</td>
+                                    <td>דני אולמו</td>
+                                    <td style="text-align: center;">13</td>
+                                    <td style="text-align: center; font-weight: bold;">2</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">7</td>
+                                    <td>פרנקי דה יונג</td>
+                                    <td style="text-align: center;">12</td>
+                                    <td style="text-align: center; font-weight: bold;">2</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">8</td>
+                                    <td>פרמין לופז</td>
+                                    <td style="text-align: center;">11</td>
+                                    <td style="text-align: center; font-weight: bold;">2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">בית</a>
+                <a href="players.html">סגל</a>
+                <a href="history.html">היסטוריה</a>
+                <a href="stats.html">סטטיסטיקה</a>
+                <a href="contact.html">הצטרפות</a>
+            </div>
+            <p>&copy; 2025 FC Barcelona Fan Site. Created by Antigravity.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

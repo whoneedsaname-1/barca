@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona - מעריצים בישראל</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">FC Barcelona IL</div>
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">בית</a></li>
+                    <li><a href="players.html">סגל</a></li>
+                    <li><a href="history.html">היסטוריה</a></li>
+                    <li><a href="stats.html">סטטיסטיקה</a></li>
+                    <li><a href="contact.html">הצטרפות</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Més que un club</h1>
+            <p>הבית של אוהדי ברצלונה בישראל</p>
+            <a href="#matches" class="btn">למשחקים הקרובים</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- League Table Section -->
+        <section id="table">
+            <h2>טבלת הליגה הספרדית (La Liga)</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>מיקום</th>
+                            <th>קבוצה</th>
+                            <th>משחקים</th>
+                            <th>נצ'</th>
+                            <th>תיקו</th>
+                            <th>הפ'</th>
+                            <th>נקודות</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pos-1">
+                            <td>1</td>
+                            <td><strong>FC Barcelona</strong></td>
+                            <td>18</td>
+                            <td>15</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td><strong>47</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Real Madrid</td>
+                            <td>18</td>
+                            <td>13</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>42</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Atlético Madrid</td>
+                            <td>18</td>
+                            <td>11</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>37</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Real Sociedad</td>
+                            <td>18</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Athletic Club</td>
+                            <td>18</td>
+                            <td>9</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>33</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Matches Section -->
+        <section id="matches">
+            <h2>המשחקים הקרובים</h2>
+            <div class="grid">
+                <div class="match-card">
+                    <div class="match-date">21 דצמבר, 2025 | 22:00</div>
+                    <div class="match-teams">Villarreal vs FC Barcelona</div>
+                    <div class="match-competition">La Liga</div>
+                </div>
+                <div class="match-card">
+                    <div class="match-date">03 ינואר, 2026 | 21:00</div>
+                    <div class="match-teams">Espanyol vs FC Barcelona</div>
+                    <div class="match-competition">La Liga</div>
+                </div>
+                <div class="match-card">
+                    <div class="match-date">21 ינואר, 2026 | 22:00</div>
+                    <div class="match-teams">Slavia Prague vs FC Barcelona</div>
+                    <div class="match-competition">UEFA Champions League</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trivia Section -->
+        <div class="trivia-box">
+            <div class="trivia-content">
+                <div class="trivia-title">הידעת?</div>
+                <p style="font-size: 1.2rem;">
+                    קאמפ נואו הוא האצטדיון הגדול ביותר באירופה עם תכולה של 99,354 צופים!
+                    <br><br>
+                    בנוסף, מועדון הכדורגל ברצלונה הוא המועדון היחיד באירופה שזכה ב"טרבל" (אליפות, גביע וליגת האלופות)
+                    פעמיים - בעונת 2008/09 ובעונת 2014/15.
+                </p>
+            </div>
+        </div>
+
+        <!-- News Links Section -->
+        <section id="news">
+            <h2>חדשות ועדכונים</h2>
+            <div class="grid">
+                <a href="https://www.sport5.co.il/articles.aspx?FolderID=378" target="_blank" class="card">
+                    <h3>ערוץ הספורט (Sport5) ↗</h3>
+                    <p>חדשות, תקצירים ודיווחים חיים בעברית.</p>
+                </a>
+                <a href="https://www.one.co.il/Soccer/Team/Statistics/5/1700" target="_blank" class="card">
+                    <h3>ONE ↗</h3>
+                    <p>עדכונים שוטפים וסטטיסטיקות מלאות.</p>
+                </a>
+                <a href="https://www.mundodeportivo.com/" target="_blank" class="card">
+                    <h3>Mundo Deportivo ↗</h3>
+                    <p>העיתון הקטלוני המוביל (ספרדית).</p>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">בית</a>
+                <a href="players.html">סגל</a>
+                <a href="history.html">היסטוריה</a>
+                <a href="stats.html">סטטיסטיקה</a>
+                <a href="contact.html">הצטרפות</a>
+            </div>
+            <p>&copy; 2025 FC Barcelona Fan Site. Created by Antigravity.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
