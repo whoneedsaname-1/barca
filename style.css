@@ -524,3 +524,14 @@ footer {
     color: #555;
     margin-bottom: 0;
 }
+/* Match Day Update */
+.card.match-day {
+    background-color: #fffde7;
+    border-top: 4px solid var(--barca-gold);
+}
+
+.card.match-day h3 {
+    color: var(--barca-red);
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
